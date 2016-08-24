@@ -2,4 +2,4 @@
   <a ui-sref="animation" class="view optionButton">
     <i class="glyphicon glyphicon-eye-open"></i>
   </a>
-  --> </div> <div class="inputWrap"> <div class="container"> <div class="row headerRow"> <div class="col-lg-12"> <h1>Wrap your links up as unique gifts</h1> <h3>Bow up your ordinary links to surprise someone.</h3> </div> </div> <div class="row inputRow"> <form> <input type="text" placeholder="Your link here" ng-model="gift.link"> <button type="button" onclick="location.href='http://localhost:9000/#/animation'">Wrap it up!</button> </form> </div> </div> </div>
+  --> </div> <div class="inputWrap"> <div class="container"> <div class="row headerRow"> <div class="col-lg-12"> <h1>Wrap your links up as unique gifts</h1> <h3>Bow up your ordinary links to surprise someone.</h3> </div> </div> <div class="row inputRow"> <div ng-controller="formCtrl"> <form name="userForm"> <input type="text" placeholder="Your link here" ng-model="link" ng-model="link"> <button type="submit" ng-click="formsubmit(userForm.$valid)" ng-disabled="userForm.$invalid">Wrap it up!</button> </form> </div> </div> </div> </div>

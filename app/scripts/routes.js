@@ -21,6 +21,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
      * Default Route
      */
     $urlRouterProvider
-        .otherwise('/home');
+        .otherwise('/');
 });
 
